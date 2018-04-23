@@ -8,7 +8,7 @@ pipeline {
         }
         stage ('Unit test') {
             steps {
-                sh '/usr/bin/python test_calculator.py'
+                sh 'python test_calculator.py'
             }
         }
     }
