@@ -7,8 +7,10 @@ pipeline {
             }
         }
 	stage ('show list') {
-		sh 'cd /usr/bin'
-		sh 'ls -al'
+            steps {
+                sh 'cd /usr/bin'
+                sh 'ls -al'
+            }
 	}
         stage ('Unit test') {
             steps {
