@@ -8,7 +8,7 @@ pipeline {
         }
 	stage ('show list') {
             steps {
-                sh 'ls -al /usr/bin | grep pyt'
+                sh 'ls -al /usr/bin'
             }
 	}
         stage ('Unit test') {
