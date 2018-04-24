@@ -8,7 +8,6 @@ pipeline {
         }
 	stage ('show list') {
             steps {
-                sh 'apt-get install python'
                 sh 'ls -al /usr/bin'
             }
 	}
